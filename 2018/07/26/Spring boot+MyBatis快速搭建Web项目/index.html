@@ -123,8 +123,8 @@
 <meta property="og:image" content="http://wx1.sinaimg.cn/mw690/0060lm7Tly1ftnbwftgctj30r30lkdhy.jpg">
 <meta property="og:image" content="http://wx1.sinaimg.cn/mw690/0060lm7Tly1ftnbwg2j8uj307m02qmx2.jpg">
 <meta property="og:image" content="http://wx4.sinaimg.cn/mw690/0060lm7Tly1ftnbwg4j8dj30g90mmtbx.jpg">
-<meta property="og:image" content="http://yoursite.com/2018/07/26/Spring%20boot+MyBatis快速搭建Web项目/0060lm7Tly1ftnbwgohkpj30bk0nsacu.jpg">
-<meta property="og:updated_time" content="2018-07-26T08:25:06.888Z">
+<meta property="og:image" content="http://wx4.sinaimg.cn/mw690/0060lm7Tly1ftncp281dlj30bk0nsacu.jpg">
+<meta property="og:updated_time" content="2018-07-26T08:37:52.495Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Spring Boot+MyBatis快速搭建Web项目">
 <meta name="twitter:description" content="简介 环境工具  IntelliJ IDEA 2018.1.5 x64 JDK 1.8.0_171 spring-boot 2.0.3.RELEASE Maven 3.5.4  额外功能  mybatis generator 自动生成代码插件  步骤  创建一个spring boot项目   创建项目的文件结构以及jdk的版本   选择项目所需要的依赖   选择持久化框架的依赖   项目结构如下">
@@ -478,7 +478,7 @@
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.hdzl.service.impl;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> com.hdzl.dao.UserInfoMapper;</span><br><span class="line"><span class="keyword">import</span> com.hdzl.service.IUserService;</span><br><span class="line"><span class="keyword">import</span> org.springframework.beans.factory.annotation.Autowired;</span><br><span class="line"><span class="keyword">import</span> org.springframework.stereotype.Service;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.List;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Service</span>(value = <span class="string">"userService"</span>)</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">UserServiceImpl</span> <span class="keyword">implements</span> <span class="title">IUserService</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Autowired</span></span><br><span class="line">    <span class="keyword">private</span> UserInfoMapper userDao;<span class="comment">//这里可能会报错，但是并不会影响</span></span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> List <span class="title">findAllUser</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span>  userDao.findAllUser();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <ul>
 <li><p>最后把index.html放入resources/templates,把需要用到的静态文件(img、js、css)放入resources/static，查看一下最终的结构</p>
-<p><img src="0060lm7Tly1ftnbwgohkpj30bk0nsacu.jpg" alt=""></p>
+<p><img src="http://wx4.sinaimg.cn/mw690/0060lm7Tly1ftncp281dlj30bk0nsacu.jpg" alt=""></p>
 </li>
 <li><p>运行EnergyconsumesystemApplication看看是否成功</p>
 </li>
